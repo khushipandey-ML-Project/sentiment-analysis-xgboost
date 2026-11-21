@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Social Media Sentiment Analysis - Home</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">🧠 Sentiment AI</div>
+
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="features.html">Features</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HOME HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="hero-top">
+
+            <div class="hero-robot">
+                🤖
+                <div class="robot-message">💗</div>
+            </div>
+
+            <div class="hero-heading">
+
+                <h1>
+                    💜 Social Media Sentiment<br>
+                    Analysis Using XGBoost
+                </h1>
+
+                <p>
+                    Analyze the sentiment of social media
+                    posts and comments.
+                </p>
+
+            </div>
+
+            <div class="hero-chart">
+
+                <div class="chart-icon">📊</div>
+
+                <div class="chart-emojis">
+                    😟 😐 😊
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SENTIMENT ANALYZER -->
+
+        <div class="analyzer">
+
+            <!-- TEXT INPUT -->
+
+            <textarea
+                id="review"
+                placeholder="✏ Enter your social media post or comment here...">
+            </textarea>
+
+
+            <!-- HELPER TEXT -->
+
+            <p class="input-hint">
+                💬 Express your feelings! Enter your comment
+                or review here and add emojis.
+            </p>
+
+
+            <!-- EMOJI PICKER -->
+
+            <div class="emoji-picker">
+
+                <p>✨ Add an emoji to your text:</p>
+
+                <button type="button" class="emoji-btn" data-emoji="😊">😊</button>
+
+                <button type="button" class="emoji-btn" data-emoji="😞">😞</button>
+
+                <button type="button" class="emoji-btn" data-emoji="😐">😐</button>
+
+                <button type="button" class="emoji-btn" data-emoji="🔥">🔥</button>
+
+                <button type="button" class="emoji-btn" data-emoji="❤️">❤️</button>
+
+                <button type="button" class="emoji-btn" data-emoji="😭">😭</button>
+
+                <button type="button" class="emoji-btn" data-emoji="😡">😡</button>
+
+                <button type="button" class="emoji-btn" data-emoji="😍">😍</button>
+
+            </div>
+
+
+            <!-- PREDICT BUTTON -->
+
+            <button id="predicBtn">
+                🔍 Predict Sentiment
+            </button>
+
+
+            <!-- PREDICTION RESULT -->
+
+            <div class="result">
+
+                <h2>✨ Prediction Result</h2>
+
+                <p id="prediction">
+                    Your result will appear here.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Social Media Sentiment Analysis | Made with 💜
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
